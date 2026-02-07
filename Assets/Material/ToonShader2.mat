@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: ToonShader2
   m_Shader: {fileID: -6465566751694194690, guid: f783599b057a6d6419f891a9532db743, type: 3}
-  m_Parent: {fileID: 0}
+  m_Parent: {fileID: 2100000, guid: 5e4a0b1dcc3c41b4b8799fd116f90c2d, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -23,34 +23,11 @@ Material:
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
-    m_TexEnvs:
-    - unity_Lightmaps:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - unity_LightmapsInd:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - unity_ShadowMasks:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
+    m_TexEnvs: []
     m_Ints: []
-    m_Floats:
-    - _Highlight: 30
-    - _QueueControl: 0
-    - _QueueOffset: 0
-    - _Scale: 0
-    - _ShaderDark: 0.01
-    - _ShaderHighlight: 0.5
-    - _ShaderLight: 0.42
+    m_Floats: []
     m_Colors:
     - _BaseColor: {r: 0.9811321, g: 0.607244, b: 0.23602703, a: 0}
-    - _HighlightColor: {r: 0.8301887, g: 0.8301887, b: 0.8301887, a: 0}
-    - _LightDir: {r: 1, g: 1, b: 1, a: 0}
-    - _ShadowColor1: {r: 0.46226412, g: 0.46226412, b: 0.46226412, a: 0}
-    - _ShadowColor2: {r: 0.6603774, g: 0.6603774, b: 0.6603774, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &3371822673546749737
