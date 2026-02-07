@@ -9,6 +9,8 @@ public class Shooting_Gunscript : MonoBehaviour
     public float shootInterval = 0.5f;
     private float shootTimer;
 
+    public GameObject sparkle;
+
     void Update()
     {
         if (Input.GetKey(KeyCode.E))
@@ -33,5 +35,10 @@ public class Shooting_Gunscript : MonoBehaviour
         GameObject selectedBullet = bullets[randomIndex];
 
         Instantiate(selectedBullet, firePoint.position, firePoint.rotation);
+        Instantiate(sparkle, firePoint.position, firePoint.rotation);
+
+        Destroy(sparkle, 2f);
+        Destroy(selectedBullet, 5f);
+
     }
 }

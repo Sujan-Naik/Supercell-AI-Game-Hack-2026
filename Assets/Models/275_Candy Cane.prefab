@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1334969149144360712}
   - component: {fileID: 2435273891150484338}
   - component: {fileID: 2951667031294029111}
+  - component: {fileID: 1738280546239255475}
   m_Layer: 0
   m_Name: Candy_Cane
   m_TagString: Untagged
@@ -86,6 +87,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1738280546239255475
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4425793149213221827}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1708799193217347295, guid: e99c53600b07c2e4ca0e2302933f5f09, type: 3}
 --- !u!1 &5249677654445476371
 GameObject:
   m_ObjectHideFlags: 0
@@ -126,6 +149,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2978283801702779070}
+  - component: {fileID: 1018972420375470703}
   m_Layer: 0
   m_Name: 275_Candy Cane
   m_TagString: Untagged
@@ -150,3 +174,23 @@ Transform:
   - {fileID: 8994434160796167138}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: -90}
+--- !u!114 &1018972420375470703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8910872772710902750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a3f4148a46f0cf46b54ecbe2934cb74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullets:
+  - {fileID: 2431053776462851346, guid: 1b00d2a48a1ead342bf5c01b60b5496e, type: 3}
+  - {fileID: 2431053776462851346, guid: 7e14d3fb543b14143b495fce45c420b0, type: 3}
+  - {fileID: 2431053776462851346, guid: b070e59117e49934aa897095c8f6fe93, type: 3}
+  - {fileID: 2431053776462851346, guid: da4044b29f682ec468b7fe3ac1d46f39, type: 3}
+  firePoint: {fileID: 8994434160796167138}
+  shootInterval: 0.5
+  sparkle: {fileID: 0}
