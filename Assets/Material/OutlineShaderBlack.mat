@@ -39,7 +39,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _FaderDistance: 75
-    - _OutlineScare: 0.01
+    - _OutlineScare: 0.0018
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
