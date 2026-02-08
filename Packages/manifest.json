@@ -1,8 +1,8 @@
 {
   "dependencies": {
-    "com.unity.ai.inference": "2.4.1",
+    "com.unity.ai.inference": "2.5.0",
     "com.unity.ai.navigation": "2.0.9",
-    "com.unity.burst": "1.8.25",
+    "com.unity.burst": "1.8.28",
     "com.unity.cinemachine": "2.10.4",
     "com.unity.collab-proxy": "2.10.2",
     "com.unity.collections": "2.6.2",
