@@ -6,6 +6,9 @@
 Assets/Resources/*
 !Assets/Resources/*.meta
 
+Assets/StreamingAssets/*
+!Assets/StreamingAssets/*.meta
+
 .utmp/
 /[Ll]ibrary/
 /[Tt]emp/

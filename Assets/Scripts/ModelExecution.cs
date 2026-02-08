@@ -91,7 +91,7 @@ public class ModelExecution : MonoBehaviour
     {
         LoadTokenizerFiles();
         
-        ModelAsset modelAsset = Resources.Load("gpt-2") as ModelAsset;
+        ModelAsset modelAsset = Resources.Load("gpt2") as ModelAsset;
         var runtimeModel = ModelLoader.Load(modelAsset);
 
         m_Worker = new Worker(runtimeModel, BackendType.GPUCompute);
