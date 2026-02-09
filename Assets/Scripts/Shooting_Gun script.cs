@@ -3,18 +3,20 @@ using UnityEngine.UIElements;
 
 public class Shooting_Gunscript : MonoBehaviour
 {
+   
     public GameObject[] bullets;
     public Transform firePoint;
 
     public float shootInterval = 0.5f;
-    private float shootTimer;
+    private float shootTimer = 0f;
 
     public GameObject sparkle;
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
         {
+
             shootTimer -= Time.deltaTime;
 
             if (shootTimer <= 0f)
@@ -23,22 +25,23 @@ public class Shooting_Gunscript : MonoBehaviour
                 shootTimer = shootInterval;
             }
         }
-        else
-        {
-            shootTimer = 0f;
-        }
     }
 
-    void Shoot()
+    public void Shoot()
     {
-        int randomIndex = Random.Range(0, bullets.Length);
-        GameObject selectedBullet = bullets[randomIndex];
 
-        Instantiate(selectedBullet, firePoint.position, firePoint.rotation);
-        Instantiate(sparkle, firePoint.position, firePoint.rotation);
+            int randomIndex = Random.Range(0, bullets.Length);
+            GameObject selectedBullet = bullets[randomIndex];
 
-        Destroy(sparkle, 2f);
-        Destroy(selectedBullet, 5f);
+            // Spawn bullet
+            GameObject bullet = Instantiate(selectedBullet, firePoint.position, firePoint.rotation);
 
+            // Spawn sparkle
+            GameObject spark = Instantiate(sparkle, firePoint.position, firePoint.rotation);
+
+            // Destroy spawned objects
+            Destroy(bullet, 5f);
+            Destroy(spark, 2f);
+        
     }
 }

@@ -193,4 +193,4 @@ MonoBehaviour:
   - {fileID: 2431053776462851346, guid: da4044b29f682ec468b7fe3ac1d46f39, type: 3}
   firePoint: {fileID: 8994434160796167138}
   shootInterval: 0.5
-  sparkle: {fileID: 0}
+  sparkle: {fileID: 6525631031655744007, guid: 6ae461b0cbb8be34899590edb3196363, type: 3}
